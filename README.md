@@ -10,11 +10,11 @@
 * ダウンロード用のフォルダをコマンドプロンプトで開く(Win+R→cmd→`cd ダウンロード用フォルダ`やエクスプローラーでダウンロード用フォルダを開いてF4(アドレスバー)→cmdなど。)
 ### 単一パートの動画をダウンロード(コマンドプロンプトに記述する形)
 ```
-yt-dlp -f bv+ba --recode-video mp4 --cookies ..\cookies.txt -o OUTPUT.mp4 URL
+yt-dlp -f bv+ba --recode-video mp4 --cookies cookies.txt -o OUTPUT.mp4 URL
 ```
 ### 複数パートの動画をダウンロード(コマンドプロンプトに記述する形)
 ```
-yt-dlp -f bv+ba --recode-video mp4 --cookies ..\cookies.txt -o "OUTPUT_%(autonumber)03d.mp4" URL
+yt-dlp -f bv+ba --recode-video mp4 --cookies cookies.txt -o "OUTPUT_%(autonumber)03d.mp4" URL
 
 mkdir a
 
@@ -36,7 +36,7 @@ rmdir /q a\n
 ```
 ### 複数パートの動画をダウンロード(バッチファイルに記述する形)
 ```
-yt-dlp -f bv+ba --recode-video mp4 --cookies ..\cookies.txt -o "OUTPUT_%%(autonumber)03d.mp4" URL
+yt-dlp -f bv+ba --recode-video mp4 --cookies cookies.txt -o "OUTPUT_%%(autonumber)03d.mp4" URL
 
 mkdir a
 
