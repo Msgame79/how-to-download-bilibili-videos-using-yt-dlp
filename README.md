@@ -34,6 +34,7 @@ move a\OUTPUT.mp4 .
 
 rmdir /q a\n
 ```
+複数行の貼り付けをすると行ごとに入力され実行されます。
 ### 複数パートの動画をダウンロード(バッチファイルに記述する形)
 ```
 yt-dlp -f bv+ba --recode-video mp4 --cookies cookies.txt -o "OUTPUT_%%(autonumber)03d.mp4" URL
