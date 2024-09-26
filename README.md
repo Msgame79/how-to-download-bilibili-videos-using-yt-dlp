@@ -59,5 +59,9 @@ rmdir /q a\n
 ```
 必要に応じて`OUTPUT`を変え、`URL`はbilibili動画のURLを使用する。ダウンロードだけなら短縮URLでも可能
 
+## バッチファイル作成
+
+[ここ](https://docs.google.com/spreadsheets/d/1ULrOIVn5RlFJjz25xemTerjckg0w567zYWeqSRl-GBs/edit?gid=2012586526#gid=2012586526&range=O1)から下のセルにはダウンロード用のコマンドが自動で生成されるようになっている。左の`request\d+`は何番目のリクエストかを示している。複数パートがある動画の場合は`rmdir a`までがコマンドである。
+
 # [en]How to download BiliBili videos using yt-dlp
 ## Step 1. Download tools
